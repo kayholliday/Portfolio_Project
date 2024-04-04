@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Project Portfolio</title>
+        <script src="https://kit.fontawesome.com/4d2f8cdd14.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- Header -->
         <header>
-            <div class="content">
+            <div class="banner"></div>
                 <h1>Kay Holliday</h1>
                 <h2>Portfolio</h2>
                 <nav class="desktop">
@@ -19,10 +20,10 @@
                 </nav>
                 <nav class="mobile">
                     <ul>
-                        <li>icons</li>
-                        <li>icons</li>
-                        <li>icons</li>
-                        <li>icons</li>
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-solid fa-pen-to-square"></i></li>
+                        <li><i class="fa-solid fa-brain"></i></li>
+                        <li><i class="fa-solid fa-phone"></i></li>
                     </ul>
                 </nav>
             </div>
@@ -30,11 +31,72 @@
 
         <!-- Main Content -->
         <main>
-
-            <div >
+            <!-- About Me Section -->    
+            <div class="about-me">
                 <h3>About Me</h3>
+                <p>Fully qualified and experienced teacher of the sciences and Computer Science to 11-18 year olds. I have a degree in Forensic Science and a Masters in Educational Leadership and Management and I am currently completing Codecademy's Full Stack Developer course. 
+                    The range of subject material, skills gained from these subjects, as well as working in education for the last 14 years, has allowed me to hone my problem solving skills and resilience.</p>
+            </div>
+            <!-- Projects Section -->
+            <div class="my-projects">
+                <div>
+                    <h3>My Projects</h3>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="./resources/images/Tea-Cozy.jpg">
+                    </div>
+                    <div class="content">
+                        <h4>Tea Cozy</h4>
+                        <p>About Tea Cozy project</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="./resources/images/Fotomatic.jpg">
+                    </div>
+                    <div class="content">
+                        <h4>Fotomatic</h4>
+                        <p>About Fotomatic project</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="./resources/images/yawningcat.jpg">
+                    </div>
+                    <div class="content">
+                        <h4>Cheat Sheets</h4>
+                        <p>About Cheat Sheet project</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills Section -->
+            <div class="skills">
+                <div>
+                    <h3>My Skills</h3>
+                </div>
+                <div class="skills-list">
+                    <ul>
+                        <li><img>HTML</li>
+                        <li><img>CSS</li>
+                        <li><img>JavaScript</li>
+                        <li><img>GitHub</li>
+                    </ul>
+                </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <!-- Contact Section -->
+            <div class="contact-details">
+                <div class="contact">
+                    <h4>Email</h4>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact">
+                    <h4>LinkedIn</h4>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
