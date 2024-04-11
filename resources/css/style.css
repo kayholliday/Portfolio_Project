@@ -1,0 +1,100 @@
+* {
+    text-align: center;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+/* Header */
+
+header {
+    font-family: "Imbue";
+    /*position:fixed;
+    z-index: 100;
+    background-color: antiquewhite;*/
+    width: 100%;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 120px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+    font-size: 24px;
+
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+
+/* Main */
+
+main {
+    font-family: "Roboto Flex";
+}
+
+main .about-me {
+    background-color: #fbe0d9;
+    padding: 5px 25px 25px 25px;
+}
+
+p {
+    text-align: justify;
+}
+
+main .my-projects {
+    background-color: #fbe0d9;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+
+main .project {
+    background-color: #dce1da;
+}
+
+.image-container {
+    align-items: center;
+    padding: 15px;
+}
+
+.image-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h4 {
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+main .content {
+    padding: 5px 10px;
+}
+
+main .skills {
+    background-color: #fbe0d9;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.skills-list {
+    font-size: 2em;
+    width: 2em;
+    display: inline;
+}

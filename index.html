@@ -3,88 +3,115 @@
     <head>
         <title>Project Portfolio</title>
         <link rel="stylesheet" href="./resources/css/style.css">
+        <link rel="stylesheet" href="./resources/css/unsemantic-grid-responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4d2f8cdd14.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
     </head>
     <body>
+        <div class="grid-container">
         <!-- Header -->
         <header>
-            <div class="banner"></div>
-                <h1>Kay Holliday</h1>
-                <h2>Portfolio</h2>
-                <nav class="desktop">
-                    <ul>
-                        <li>About Me</li>
-                        <li>Projects</li>
-                        <li>Skills</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-                <nav class="mobile">
-                    <ul>
-                        <li><i class="fa-solid fa-user"></i></li>
-                        <li><i class="fa-solid fa-pen-to-square"></i></li>
-                        <li><i class="fa-solid fa-brain"></i></li>
-                        <li><i class="fa-solid fa-phone"></i></li>
-                    </ul>
-                </nav>
+            <div class="grid-100">
+                <div class="title">
+                    <h1>Kay Holliday</h1>
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="#about-me">About Me</a></li>
+                            <li><a href="#my-projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!--<nav class="mobile">
+                        <ul>
+                            <li><i class="fa-solid fa-user"></i></li>
+                            <li><i class="fa-solid fa-pen-to-square"></i></li>
+                            <li><i class="fa-solid fa-brain"></i></li>
+                            <li><i class="fa-solid fa-phone"></i></li>
+                        </ul>
+                    </nav>-->
+                </div>
             </div>
         </header>
 
         <!-- Main Content -->
         <main>
             <!-- About Me Section -->    
-            <div class="about-me">
-                <h3>About Me</h3>
-                <p>Fully qualified and experienced teacher of the sciences and Computer Science to 11-18 year olds. I have a degree in Forensic Science and a Masters in Educational Leadership and Management and I am currently completing Codecademy's Full Stack Developer course. 
-                    The range of subject material, skills gained from these subjects, as well as working in education for the last 14 years, has allowed me to hone my problem solving skills and resilience.</p>
+            <div class="about-me">     
+                <div class="grid-100">
+                    <h3>About Me</h3>
+                    <div class="about-me-content">    
+                        <p>Fully qualified and experienced teacher of the sciences and Computer Science to 11-18 year olds. I have a degree in Forensic Science and a Masters in Educational Leadership and Management and I am currently completing Codecademy's Full Stack Developer course. 
+                        The range of subject material, skills gained from these subjects, as well as working in education for the last 14 years, has allowed me to hone my problem solving skills and resilience.</p>
+                    </div>        
+                </div>
             </div>
             <!-- Projects Section -->
             <div class="my-projects">
                 <div>
                     <h3>My Projects</h3>
                 </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img src="./resources/images/Tea-Cozy.jpg">
-                    </div>
-                    <div class="content">
-                        <h4>Tea Cozy</h4>
-                        <p>About Tea Cozy project</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img src="./resources/images/Fotomatic.jpg">
-                    </div>
-                    <div class="content">
-                        <h4>Fotomatic</h4>
-                        <p>About Fotomatic project</p>
+                <div class="grid-33">
+                    <div class="project">
+                        <div class="image-container">
+                            <img src="./resources/images/Tea-Cozy.jpg">
+                        </div>
+                        <div class="content">
+                            <details>
+                                <summary><h4>Tea Cozy</h4></summary>
+                                <p>This is the homepage of a fictional tea shop website. A design spec and image assets were provided.</p>
+                            </details>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="image-container">
-                        <img src="./resources/images/yawningcat.jpg">
+                <div class="grid-33">
+                    <div class="project">
+                        <div class="image-container">
+                            <img src="./resources/images/Fotomatic.jpg">
+                        </div>
+                        <div class="content">
+                            <details>
+                                <summary><h4>Fotomatic</h4></summary> 
+                                <p>A responsive website for a fictional camera company.</p>
+                            </details>    
+                        </div>
                     </div>
-                    <div class="content">
-                        <h4>Cheat Sheets</h4>
-                        <p>About Cheat Sheet project</p>
+                </div>
+                <div class="grid-33">
+                    <div class="project">
+                        <div class="image-container">
+                            <img src="./resources/images/Website Design System.jpg">
+                        </div>
+                        <div class="content">
+                            <details>
+                                <summary><h4>Website Design System</h4></summary>
+                                <p>My own basic design system for a website. In essence, a website that helps me build more websites in the future! On my site, I collect all the colours, fonts, and some of my repeating styles.</p>
+                            </details>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Skills Section -->
-            <div class="skills">
-                <div>
-                    <h3>My Skills</h3>
-                </div>
-                <div class="skills-list">
-                    <ul>
-                        <li><img>HTML</li>
-                        <li><img>CSS</li>
-                        <li><img>JavaScript</li>
-                        <li><img>GitHub</li>
-                    </ul>
+            <div class="grid-100">
+                <div class="skills">
+                    <div>
+                        <h3>My Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i></li>
+                            <li><i class="fa-brands fa-css3-alt"></i></li>
+                            <li><i class="fa-brands fa-js"></i></li>
+                            <li><i class="fa-brands fa-git"></i></li>
+                            <li><i class="fa-brands fa-github"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            
         </main>
         <footer>
         </footer>
