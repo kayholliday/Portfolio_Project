@@ -60,6 +60,7 @@ main .my-projects {
 
 main .project {
     background-color: #dce1da;
+    transition: background-color 01s ease-in-out;
 }
 
 .image-container {
@@ -97,4 +98,12 @@ main .skills {
     font-size: 2em;
     width: 2em;
     display: inline;
+}
+
+/* Contact Page */
+
+main .contact {
+    display: inline;
+    padding: 5px;
+    font-size: 24px;
 }

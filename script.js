@@ -1,6 +1,9 @@
-let projectColourChange = document.getElementsByClassName('project');
-let mouseOverFunction = () => {
-    projectColourChange.style.backgroundColor = '#a4b8ac';
-};
+function mouseOver(project)
+{
+    project.style.backgroundColor='#a4b8ac';
+}
 
-projectColourChange.onmouseover = mouseOverFunction;
+function mouseOut(project)
+{
+    project.style.backgroundColor='#dce1da';
+}
